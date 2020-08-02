@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+	<test thread-count="5" name="Verify That - On clicking the dish name Cajun spiced fish tacos instructions are displayed">
+		<parameter name="browser" value="chrome"></parameter>
+		<parameter name="urlnm" value="https://www.themealdb.com/"></parameter>
+		<parameter name="timeoutsec" value="15"></parameter>
+		
+		<classes>
+			<class name="testcases.LaunchTest">
+				<methods>
+					<include name="executeLaunch"></include>
+				</methods>
+			</class>
+			<class name="testcases.Test_TheMealdb">
+			</class>
+
+		</classes>
+	</test> <!-- Test -->
+
+	<test thread-count="5"
+		name=" Verify that 2 dishes are found and are named Katsu Chicken curry and Nutty Chicken Curry">
+		<parameter name="browser" value="chrome"></parameter>
+		<parameter name="urlnm" value="https://www.themealdb.com/"></parameter>
+		<parameter name="timeoutsec" value="15"></parameter>
+		<parameter name="searchKeyword" value="Chicken Curry"></parameter>
+		
+		<classes>
+			<class name="testcases.LaunchTest">
+				<methods>
+					<include name="executeLaunch"></include>
+				</methods>
+			</class>
+			<class name="testcases.Test_TheMealdbSearch_Scenario2">
+
+			</class>
+
+		</classes>
+	</test> <!-- Test -->
+
+</suite> <!-- Suite -->

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="Verify That - On clicking the dish name Cajun spiced fish tacos instructions are displayed(failed)">
+    <parameter name="browser" value="chrome"/>
+    <parameter name="urlnm" value="https://www.themealdb.com/"/>
+    <parameter name="searchKeyword" value="Chicken Curry"/>
+    <parameter name="timeoutsec" value="15"/>
+    <classes>
+      <class name="testcases.Test_TheMealdb">
+        <methods>
+          <include name="tearDown"/>
+          <include name="test_CajunSpicedfishExist"/>
+          <include name="test_CajunSpicedfishInstructions"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- testcases.Test_TheMealdb -->
+    </classes>
+  </test> <!-- Verify That - On clicking the dish name Cajun spiced fish tacos instructions are displayed(failed) -->
+</suite> <!-- Failed suite [Suite] -->
